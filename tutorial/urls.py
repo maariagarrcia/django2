@@ -22,9 +22,20 @@ urlpatterns = [
     # paths del core
     path('',include('core.urls')),
     
+    # paths del services
+    path('services/',include('services.urls')),
+    
+    # paths del pages
+    path('page/',include('pages.urls')),
+
+    # paths del blog
+    path('blog/',include('blog.urls')),
+
+    # paths del contact
+    path('contact/',include('contact.urls')),
+    
     # paths del admin
     path("admin/", admin.site.urls),
-    # paths del admin
 ]
 
 if settings.DEBUG:
